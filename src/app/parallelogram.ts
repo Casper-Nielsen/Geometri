@@ -1,3 +1,4 @@
-import { Rectangle } from './rectangle'
+import { Rectangle } from './rectangle';
+
 export class Parallelogram extends Rectangle {
 }

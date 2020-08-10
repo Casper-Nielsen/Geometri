@@ -1,4 +1,5 @@
-import { Figure } from './figure'
+import { Figure } from './figure';
+
 export class Trapez extends Figure {
     protected sideA : number;
     protected sideB : number;
@@ -44,6 +45,6 @@ export class Trapez extends Figure {
         return 0.5 * (this.SideA + this.SideB) * this.Height;
     }
     public GetCircumference() {
-        return this.SideA + this.SideB + (this.Height * ((1/Math.sin(this.AngleA*Math.PI/180))+(1/Math.sin(this.AngleB*Math.PI/180))))
+        return this.SideA + this.SideB + (this.Height * ((1/Math.sin(this.AngleA*Math.PI/180))+(1/Math.sin(this.AngleB*Math.PI/180))));
     }
 }
