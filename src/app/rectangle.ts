@@ -21,6 +21,6 @@ export class Rectangle extends Figure {
         return this.Width * this.Height;
     }
     public GetCircumference() {
-        return 2 * (this.Width + this.Height);
+        return  2 *this.Width + 2 *this.Height;
     }
 }
