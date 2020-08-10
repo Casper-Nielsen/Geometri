@@ -1,2 +1,4 @@
-export class Cube {
+import { Figure } from './figure';
+
+export class Cube extends Figure {
 }

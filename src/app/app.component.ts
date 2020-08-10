@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Figure } from './figure';
+import { Cube } from './cube';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'h3-geometri';
+  test : Figure = new Cube
 }
