@@ -3,7 +3,6 @@ import { Figure } from './figure';
 import { Cube } from './cube';
 import { Rectangle } from './rectangle';
 import { Parallelogram } from './parallelogram';
-import { Trapez } from './trapez';
 import { ConvertActionBindingResult } from '@angular/compiler/src/compiler_util/expression_converter';
 
 @Component({
@@ -32,14 +31,5 @@ export class AppComponent {
     parallelogram.Width = width;
     parallelogram.Height = height;
     this.test = parallelogram;
-  }
-  public createTrapez(sideA : number,sideB : number,angleA : number,angleB : number, height : number){
-    let trapez : Trapez = new Trapez();
-    trapez.SideA = sideA;
-    trapez.SideB = sideB;
-    trapez.AngleA = angleA;
-    trapez.AngleB = angleB;
-    trapez.Height = height;
-    this.test = trapez;
   }
 }

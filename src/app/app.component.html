@@ -7,33 +7,24 @@
 </div>
 
 <div class="content" role="main">
-  <p>{{ test.GetCircumference() }}</p>
-  <p>{{ test.GetArea() }}</p>
-
-  <div>
-    <span>t</span>
-    <input type="number" value="10" #sideA>
+  <div class="container">
+    <div class="row">
+      <span class="col-sm-2 text-right">Side a:</span>
+      <input class="col-sm-1" type="number" value="10" #sideA>
+      <span class="col-sm-9">will be used on all figurs as a side</span>
+    </div>
+    <div class="row">
+      <span class="col-sm-2 text-right">Height: </span>
+      <input class="col-sm-1" type="number" value="10" #sideB>
+      <span class="col-sm-9">will not be used on a cube, else it will be used as a side/height on all other</span>
+    </div>
   </div>
-  <div>
-    <span>tt</span>
-    <input type="number" value="10" #sideB>
+    <div class="container">
+      <button (click)="createCube(sideA.value)" formtarget="_blank">create Cube</button>
+      <button (click)="createRectangle(sideA.value, sideB.value)" formtarget="_blank">create Rectangle</button>
+      <button (click)="createParallelogram(sideA.value, sideB.value)" formtarget="_blank">create Parallelogram</button>
+    </div>
+    
+  <p>Circumference : {{ test.GetCircumference() }}</p>
+  <p>Area : {{ test.GetArea() }}</p>
   </div>
-  <div>
-    <span>ttt</span>
-    <input type="number" value="10" #angleA>
-  </div>
-  <div>
-    <span>tttt</span>
-    <input type="number" value="10" #angleB>
-  </div>
-  <div>
-    <span>ttttt</span>
-    <input type="number" value="10" #Height>
-  </div>
-  <div>
-    <button (click)="createCube(sideA.value)" formtarget="_blank">create Cube</button>
-    <button (click)="createRectangle(sideA.value, sideB.value)" formtarget="_blank">create Rectangle</button>
-    <button (click)="createParallelogram(sideA.value, sideB.value)" formtarget="_blank">create Parallelogram</button>
-    <button (click)="createTrapez(sideA.value, sideB.value, angleA.value, angleB.value, Height.value)" formtarget="_blank">create Trapez</button>
-  </div>
-</div>
