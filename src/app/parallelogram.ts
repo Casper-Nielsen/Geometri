@@ -1,3 +1,3 @@
-import { Figure } from './figure'
-export class Parallelogram extends Figure {
+import { Rectangle } from './rectangle'
+export class Parallelogram extends Rectangle {
 }
